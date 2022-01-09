@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-{% extends 'main/base.html' %}
+{% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/style.css'%}" type="text/css">
     <title>Shmetflix</title>
 </head>
-{% block content %}
-{% endblock content %}
-</html>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img height="75" width="155" src="{% static 'main\images\shmetflix_logo3.png' %}" alt="logo">
+                </div>
+                <nav class="nav">
+                    <a class="button" href="#">Sign in</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__title">
+                    <h1 class="intro__h1">Unlimited movies, TV <br>shows, and more.</h1>
+                    <h2 class="intro__h2">Watch anywhere. Cancel anytime.</h2>
+                    <h3 class="intro__h3">Ready to watch? Enter your email to create or restart your membership.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
