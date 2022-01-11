@@ -104,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     url(../images/intro_bg.jpg) center no-repeat;
     background-size: 100%;
     background-size: cover;
+    border-bottom: 8px solid #333333;
 }
 
 .intro__title {
@@ -123,4 +124,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__h3 {
     font-size: 19px;
+}
+
+
+
+/* features
+==================== */
+
+.features {
+    border-bottom: 8px solid #333333;
+}
+
+.features_container {
+    width: 100%;
+    margin: 0 150px;
+}
+
+.watchOnTv__title {
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-top: 150px;
+}
+
+.watchOnTv__subtitle {
+    font-size: 26px;
+    color: #FFFFFF;
+    margin-bottom: 150px;
 }
