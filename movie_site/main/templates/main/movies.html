@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/movies.css'%}" type="text/css">
+    <title>Shmetflix</title>
+<body>
+    {% for movie in movie_list %}
+        <div class="movie">
+            <img class="img" width="250" height="350" src="{{ movie.poster.url }}">
+            <h4 class="movie__title">
+                {{ movie.title }}
+            </h4>
+            <a href="#">Learn more</a>
+        </div>
+    {% endfor %}
+</body>
