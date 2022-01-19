@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shmetflix</title>
+</head>
+<body>
+  {% for movie in movie_id %}
+    <div class="movie">
+        <div class="movie__inner">
+            <h1 class="movie__name">{{ movie }}</h1>
+            <div class="movie__description">{{ movie.description }}</div>
+            <div class="movie__directors">
+                {% for directors in movie.directors.all %}
+                    <div class="directors__name">Directors: {{ directors.name }}</div>
+                {% endfor %}
+            </div>
+            <div class="movie__actors">
+                Actors:
+                {% for actors in movie.actors.all %}
+                    <div class="actor__name">{{ actors.name }}</div>
+                {% endfor %}
+            </div>
+            <div class="movie__genres">
+                Genres:
+                {% for genres in movie.genre.all %}
+                    <span class="genre__name">{{ genres.name }}</span>
+                {% endfor %}
+            </div>
+            <div class="movie__premiere">World premiere: {{ movie.world_premiere }}</div>
+            <div class="movie__country">Countries: {{ movie.country }}</div>
+            <div class="movie__budget">Budget: {{ movie.budget }}</div>
+            <div class="movie__worldwide">Box office: {{ movie.worldwide }}</div>
+        </div>
+    </div>
+  {% endfor %}
+</body>
+</html>

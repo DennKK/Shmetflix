@@ -43,9 +43,9 @@ class Genre(models.Model):
 
 
 class Movie(models.Model):
-    title = models.CharField(max_length=100)
-    slogan = models.CharField(max_length=300, default='')
-    description = models.TextField(max_length=210, default="")
+    title = models.CharField(max_length=20)
+    slogan = models.CharField(max_length=200, default='')
+    description = models.TextField(default="")
     poster = models.ImageField(default=None, upload_to='movies/')
     country = models.CharField(max_length=100, default="")
     directors = models.ManyToManyField(Actor, verbose_name="director", related_name="film_director")

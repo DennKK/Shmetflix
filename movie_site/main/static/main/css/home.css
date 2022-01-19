@@ -209,3 +209,67 @@ h1, h2, h3, h4, h5, h6 {
 .kidsValueProp {
     text-align: right;
 }
+
+
+
+/* Footer
+==================== */
+
+.footer {
+background-color: #000000;
+font-family: Verdana;
+}
+
+.footer__inner {
+    display: flex;
+    padding: 50px 0;
+}
+
+.footer__block {
+    width: 33.3333333%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.footer__address {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: normal;
+}
+
+.social__icon {
+    filter: invert(75%)
+}
+
+.middle_img {
+    margin: 0 30px;
+}
+
+.footer__text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Copyright
+==================== */
+.copyright {
+    padding: 20px 0;
+    background-color: #0A0A0A;
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    color: #99A0AC;
+}
+
+.copyright__link {
+    color: #FFF;
+}

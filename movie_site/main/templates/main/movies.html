@@ -24,11 +24,11 @@
                 <div class="card h-100 text-light">
                   <img class="card-img-top" width="50" height="300" src="{{ movie.poster.url }}">
                   <div class="card-body">
-                    <h5 class="card-title">{{ movie.title }}</h5>
-                    <p class="card-text">{{ movie.description }}</p>
+                    <h5 class="card-title">{{ movie.title|truncatechars:30 }}</h5>
+                    <p class="card-text">{{ movie.slogan|truncatechars:200 }}</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted"><a href="#">Learn more</a></small>
+                    <small class="text-muted"><a href="{% url 'main:movie' movie.id %}">Learn more</a></small>
                   </div>
                 </div>
               </div>
