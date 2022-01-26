@@ -5,7 +5,6 @@
     <title>Shmetflix</title>
 </head>
 <body>
-  {% for movie in movie_id %}
     <div class="movie">
         <div class="movie__inner">
             <h1 class="movie__name">{{ movie }}</h1>
@@ -33,6 +32,5 @@
             <div class="movie__worldwide">Box office: {{ movie.worldwide }}</div>
         </div>
     </div>
-  {% endfor %}
 </body>
 </html>

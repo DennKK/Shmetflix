@@ -22,13 +22,13 @@
             {% for movie in movie_list %}
               <div class="col">
                 <div class="card h-100 text-light">
-                  <img class="card-img-top" width="50" height="300" src="{{ movie.poster.url }}">
+                    <img class="card-img-top" width="50" height="300" src="{{ movie.poster.url }}">
                   <div class="card-body">
                     <h5 class="card-title">{{ movie.title|truncatechars:30 }}</h5>
-                    <p class="card-text">{{ movie.slogan|truncatechars:200 }}</p>
+                    <p class="card-text">{{ movie.description|truncatechars:100 }}</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted"><a href="{% url 'main:movie' movie.id %}">Learn more</a></small>
+                    <a href="{{ movie.get_absolute_url }}">Learn more</a>
                   </div>
                 </div>
               </div>
