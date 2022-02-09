@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.utils.text import slugify
 
 
 class Category(models.Model):
@@ -65,7 +66,8 @@ class Movie(models.Model):
     def get_absolute_url(self):
         return reverse('movie_detail', kwargs={"slug": self.url})
 
-    """def save(self, *args, **kwargs):
+    """
+    def save(self, *args, **kwargs):
         value = self.title
         self.url = slugify(value, allow_unicode=True)
         super().save(*args, **kwargs)
