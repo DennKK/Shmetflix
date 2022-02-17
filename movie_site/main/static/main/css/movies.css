@@ -6,36 +6,15 @@ body {
     font-family: Verdana;
     overflow-x: hidden;
 }
-
 *,
 *:before,
 *:after, {
     box-sizing: border-box;
 }
-
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
-
-
-
-/* Navbar
-==================== */
-
-.navbar {
-    background: #060606;
-}
-
-
-
-/* Movies
-==================== */
-
 .card {
     margin-top: 50px;
     background: #060606;
-}
-
-.card-body {
-
 }
